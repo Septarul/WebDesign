@@ -1,0 +1,33 @@
+#ceva{
+    width: 100%;
+    margin-left: -0.4%;
+    margin-top: -0.4%;
+}
+#coral{
+    width: 100%;
+    margin-left: -0.4%;
+    margin-top: -0.4%;
+    z-index: 0;
+}
+img {
+    position: fixed;
+}
+
+#fish1Id {
+    left: 250px;
+    top: 250px;
+    width: 250px;
+    height: 250px;
+}
+
+#fish2Id {
+    left: 500px;
+    top: 250px;
+    width: 150px;
+    height: 150px;
+}
+
+.bubbleClass {
+    width: 100px;
+    height: 100px;
+}

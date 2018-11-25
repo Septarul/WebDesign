@@ -15,8 +15,8 @@ $("#fish2Id").mouseenter(function(){
 
 
 
-/*$("#coral").on("click",function(){
-   alert(x);
+$("#coral").on("click",function(){
+   alert("asd");
 });
  
 $("#fish1Id").on("dblclick", function() {
