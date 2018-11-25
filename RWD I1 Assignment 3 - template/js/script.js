@@ -72,6 +72,6 @@ $("#coral").on("click", function(event){
 $("#flick").on("click", function(){
     $("#fish1Id").stop(true);
     $("#coral").css("z-index", "4");
-    $("#fish1Id").animate({top:600,left:900},1600,"swing").animate({top:600,left:1700},1000,"swing",function(){coral()});
+    $("#fish1Id").animate({top:"60%",left:"45%"},1600,"swing").animate({top:"60%",left:"89%"},1000,"swing",function(){coral()});
     fishMovement("#fish1Id",4000);
 });
