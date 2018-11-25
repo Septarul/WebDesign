@@ -2,8 +2,8 @@
 #ceva{
     width: 100%;
     height: 100%;
-    margin-left: -0.4%;
-    margin-top: -0.4%;
+    margin-left: -0.51%;
+    margin-top: -0.51%;
 }
 #coral{
     width: 100%;
@@ -31,13 +31,14 @@ img {
 }
 
 .bubbleClass {
+    opacity: 0%;
     width: 100px;
     height: 100px;
 }
 #flick{
     position: absolute;
     width: 32%;
-    height: 40%;
+    height: 38%;
     margin-top: 29.7%;
     margin-left: 59%;
 }
