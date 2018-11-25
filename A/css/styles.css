@@ -1,6 +1,5 @@
 .fish{
-    z-index: 2;
-
+    z-index: 3;
 }
 #fishes{
      position: absolute;
@@ -9,21 +8,17 @@
     margin-top: -9px;
     margin-left: -7.8px;
 }
-
 #coral{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
 }
-
 #bgg{
     position: absolute;
-
 }
-
 #fish1Id{
-position:absolute;
+    position:relative;
 }
 #fish2Id{
-    position: absolute;
+    position: relative;
 }
 
