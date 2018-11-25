@@ -50,4 +50,6 @@ $("#coral").on("click", function(event){
         var y = event.pageY-175;
      $("#fish1Id").stop(true).animate({top:y,left:x}, 800,"swing").animate({height: "250px", width: "250px"}).delay(600);
     fishMovement("#fish1Id",4000);;
-});  
+});
+$("#flick").on("click", function(){
+});
