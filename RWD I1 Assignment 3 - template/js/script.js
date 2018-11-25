@@ -8,7 +8,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var left =randomLeft($(window).width());
-   $(".bubbleClass").animate({top:760,left:left},1).delay(900);
     bubblesMovement(".bubbleClass",left);
 });
 
@@ -33,14 +32,31 @@ $("#fish2Id").on("mouseenter",function () {
 });
 
 function bubblesMovement(idRef,left){
-    $(idRef).animate({top:0,left:left},7000).fadeOut();
+    var id=idRef;
+    var lef =randomLeft($(window).width());
+    $(idRef).animate({top:"120%",left:left},function(){
+        $(idRef).css("visibility","visible");
+    }).delay(600);
+        
     
+    $(idRef).animate({top:0,left:left},7000).fadeOut().animate({},function(){
+    bubblesMovement1(id,lef);
+    });
+};
+
+function bubblesMovement1(idRef,lef){
+    $(idRef).animate({top:"120%",left:left},function(){
+        $(idRef).fadeIn();
+    }).delay(600);
+    $(idRef).animate({top:0,left:left},7000).fadeOut().animate({},function(){
+    bubblesMovement1(id,lef);
+    });
     
-}
+};
 
 function randomLeft(max){
     return Math.floor(Math.random() * (max + 1)); 
-}
+};
 
 function randomMovement(idRef) {
     var y = getRandom($(document).height() - 150);

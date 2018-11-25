@@ -29,7 +29,7 @@ img {
 }
 
 .bubbleClass {
-    opacity: 0%;
+    visibility:hidden;
     width: 100px;
     height: 100px;
 }
