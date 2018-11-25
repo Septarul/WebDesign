@@ -52,4 +52,5 @@ $("#coral").on("click", function(event){
     fishMovement("#fish1Id",4000);;
 });
 $("#flick").on("click", function(){
+    
 });
