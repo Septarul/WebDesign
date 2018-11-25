@@ -60,7 +60,9 @@ function fishMovement(idRef, speed) {
         fishMovement(idRef, speed)
     });
 };
-
+function coral() {
+    $("#coral").css("z-index", "0");
+};
 $("#coral").on("click", function(event){
         var x= event.pageX-220;
         var y = event.pageY-175;
@@ -68,5 +70,8 @@ $("#coral").on("click", function(event){
     fishMovement("#fish1Id",4000);;
 });
 $("#flick").on("click", function(){
-    
+    $("#fish1Id").stop(true);
+    $("#coral").css("z-index", "4");
+    $("#fish1Id").animate({top:600,left:900},1600,"swing").animate({top:600,left:1700},1000,"swing",function(){coral()});
+    fishMovement("#fish1Id",4000);
 });
