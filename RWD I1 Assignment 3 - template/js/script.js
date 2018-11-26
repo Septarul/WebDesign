@@ -32,28 +32,19 @@ $("#fish2Id").on("mouseenter",function () {
 });
 
 function bubblesMovement(idRef,left){
-    var id=idRef;
-    var lef =randomLeft($(window).width());
+    var bula=idRef;
     $(idRef).animate({top:"120%",left:left},function(){
         $(idRef).css("visibility","visible");
     }).delay(600);
         
     
-    $(idRef).animate({top:0,left:left},7000).fadeOut().animate({},function(){
-    bubblesMovement1(id,lef);
+    $(idRef).animate({},function(){
+        miscarea(bula);
     });
 };
-
-function bubblesMovement1(idRef,lef){
-    $(idRef).animate({top:"120%",left:left},function(){
-        $(idRef).fadeIn();
-    }).delay(600);
-    $(idRef).animate({top:0,left:left},7000).fadeOut().animate({},function(){
-    bubblesMovement1(id,lef);
-    });
-    
-};
-
+function miscarea(idRef){
+    $(idRef).animate({top:0,left:left},7000).fadeOut().animate({top:"120%",left:left}).fadeIn().animate({top:0,left:left},7000).fadeOut();
+}
 function randomLeft(max){
     return Math.floor(Math.random() * (max + 1)); 
 };
