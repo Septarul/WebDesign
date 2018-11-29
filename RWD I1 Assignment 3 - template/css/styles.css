@@ -22,6 +22,7 @@ img {
 }
 
 #fish2Id {
+    z-index: 7;
     left: 500px;
     top: 250px;
     width: 150px;
@@ -29,10 +30,12 @@ img {
 }
 
 .bubbleClass {
+    z-index: 5;
     visibility:hidden;
     width: 100px;
     height: 100px;
 }
+
 #flick{
     position: absolute;
     width: 32%;
@@ -40,4 +43,43 @@ img {
     margin-top: 29.7%;
     margin-left: 59%;
     z-index:6;
+}
+#menu{
+    position: fixed;
+    z-index: 7;
+    width: 100px;
+    height: 30px;
+    margin-left: 94%;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-family: cursive;
+    font-size: 1em;
+}
+#navbar-nav{
+    position: fixed;
+    z-index: 7;
+    margin-left: 92%;
+    margin-top: 1.9%;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav-item{
+    z-index: 7;
+    text-decoration: none;
+}
+.options{
+    color: white;
+    font-family: cursive;
+    font-size: 1.5em;
+    z-index: 7;
+}
+.pick{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 1em;
 }
