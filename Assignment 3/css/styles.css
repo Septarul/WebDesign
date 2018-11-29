@@ -49,7 +49,7 @@ img {
     z-index: 7;
     width: 100px;
     height: 30px;
-    margin-left: 94%;
+    margin-left: 92.8%;
     border-radius: 10px;
     background-color: red;
     color: white;
@@ -59,7 +59,7 @@ img {
 #navbar-nav{
     position: fixed;
     z-index: 7;
-    margin-left: 92%;
+    margin-left: 90.8%;
     margin-top: 1.9%;
     text-decoration: none;
     list-style-type: none;
